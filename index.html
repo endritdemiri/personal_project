@@ -1,0 +1,338 @@
+
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Classic Looks Clothing - Veshje klasike dhe elegante për çdo sezon.">
+    <title>Classic Looks Clothing</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    
+    <header>
+        <img src="logooo.png" alt="Classic Looks Logo" class="logo">
+
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <button id="cart-btn" type="button" aria-controls="cart-drawer" aria-expanded="false">
+            <img src="images/shporta.jpg" alt="">
+            <span>Shporta</span>
+            <span id="cart-badge">0</span>
+        </button>
+    </header>
+
+    
+    <main>
+
+        
+        <section class="hero-section">
+            <div class="container hero-grid">
+
+                <div class="hero-content">
+                    <span class="hero-tag">
+                        Koleksioni i Ri • Vjeshtë / Dimër
+                    </span>
+
+                    <h1 class="hero-title">
+                        Elegancë e Përjetshme & Stil Klasik
+                    </h1>
+
+                    <p class="hero-desc">
+                        Zbuloni veshje të kuruara me kujdes nga materialet
+                        më cilësore natyrale. Dizajne minimaliste që i
+                        rezistojnë kohës.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a href="#shop" class="btn-primary">
+                            Eksploro Koleksionin
+                        </a>
+
+                        <a href="about.html" class="btn-outline">
+                            Historia Jonë
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-image-box">
+                    <img
+                        src="images/koleksioni.jpg"
+                        alt="Classic Looks Collection">
+                </div>
+
+            </div>
+        </section>
+
+        
+        <section id="shop" class="shop-section">
+            <div class="container">
+
+                <div class="shop-header">
+
+                    <div>
+                        <h2 class="section-title">
+                            Përzgjedhja Jonë
+                        </h2>
+
+                        <p class="section-subtitle">
+                            Veshje të dizenjuara për rehati dhe finesë
+                            në çdo detaj.
+                        </p>
+                    </div>
+
+                    <div class="filter-group" id="filter-buttons">
+                        <button class="filter-btn active" data-category="all">
+                            Të Gjitha
+                        </button>
+
+                        <button class="filter-btn" data-category="pallto">
+                            Pallto & Xhaketa
+                        </button>
+
+                        <button class="filter-btn" data-category="kemisha">
+                            Këmisha & Fustane
+                        </button>
+
+                        <button class="filter-btn" data-category="triko">
+                            Triko
+                        </button>
+                    </div>
+
+                </div>
+
+                
+                <div class="products-grid" id="products-grid"></div>
+
+            </div>
+        </section>
+
+    </main>
+
+    
+    <footer class="site-footer">
+
+        <div class="container footer-grid">
+
+            <div class="footer-col">
+
+                <div class="footer-brand">
+                    <img
+                        src="logooo.png"
+                        alt="Classic Looks"
+                        class="footer-logo-img">
+
+                    <div>
+                        <h3 class="footer-brand-name">
+                            CLASSIC LOOKS
+                        </h3>
+
+                        <span class="footer-brand-sub">
+                            CLOTHING
+                        </span>
+                    </div>
+                </div>
+
+                <p class="footer-desc">
+                    Veshje klasike me prerje të pastra dhe materiale
+                    premium, të krijuara për t'u veshur sezon pas sezoni.
+                </p>
+
+            </div>
+
+            <div class="footer-col">
+
+                <h4 class="footer-heading">Koleksionet</h4>
+
+                <ul class="footer-links">
+                    <li>
+                        <a href="#shop" data-filter="all">
+                            Të Gjitha Veshjet
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#shop" data-filter="pallto">
+                            Pallto & Xhaketa
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#shop" data-filter="kemisha">
+                            Këmisha & Fustane
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#shop" data-filter="triko">
+                            Triko Kashmiri
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+
+            <div class="footer-col">
+
+                <h4 class="footer-heading">Ndihmë & Kujdesi</h4>
+
+                <ul class="footer-links">
+                    <li>
+                        <button class="footer-link-btn" onclick="openInfoModal('sizes')">
+                            Udhëzuesi i Masave
+                        </button>
+                    </li>
+
+                    <li>
+                        <button class="footer-link-btn" onclick="openInfoModal('shipping')">
+                            Dërgesat & Kthimet
+                        </button>
+                    </li>
+
+                    <li>
+                        <button class="footer-link-btn" onclick="openInfoModal('care')">
+                            Kujdesi për Rrobat
+                        </button>
+                    </li>
+
+                    <li>
+                        <button class="footer-link-btn" onclick="openInfoModal('faq')">
+                            Pyetje të Shpeshta (FAQ)
+                        </button>
+                    </li>
+                </ul>
+
+            </div>
+
+            <div class="footer-col">
+
+                <h4 class="footer-heading">
+                    Buletini Informativ
+                </h4>
+
+                <p class="footer-desc">
+                    Ruaje adresën për buletinin në këtë shfletues.
+                </p>
+
+                <form id="newsletter-form" class="newsletter-form">
+                    <input
+                        type="email"
+                        id="newsletter-email"
+                        placeholder="Email-i juaj..."
+                        required>
+
+                    <button type="submit">
+                        Abonohu
+                    </button>
+                </form>
+
+                <p id="newsletter-msg" class="newsletter-msg" role="status"></p>
+
+            </div>
+
+        </div>
+
+        <!-- FOOTER BOTTOM -->
+        <div class="container footer-bottom">
+
+            <p>
+                &copy; 2026 Classic Looks Clothing.
+                Të gjitha të drejtat e rezervuara.
+            </p>
+
+            <div class="footer-legal">
+
+                <button class="footer-link-btn" onclick="openInfoModal('privacy')">
+                    Privatësia
+                </button>
+
+                <button class="footer-link-btn" onclick="openInfoModal('terms')">
+                    Kushtet e Përdorimit
+                </button>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!-- CART BACKDROP -->
+    <div id="cart-backdrop" class="backdrop hidden"></div>
+
+    <!-- SHOPPING CART -->
+    <aside id="cart-drawer" class="cart-drawer" inert>
+
+        <div class="cart-header">
+            <h3>Shporta Juaj</h3>
+
+            <button id="close-cart" class="close-btn" aria-label="Mbyll shportën">
+                &times;
+            </button>
+        </div>
+
+        <div id="cart-items" class="cart-items"></div>
+
+        <div class="cart-footer">
+
+            <div class="cart-total-row">
+                <span>Totali:</span>
+                <span id="cart-total" class="cart-total-price">
+                    0.00 €
+                </span>
+            </div>
+
+            <button id="checkout-btn" class="btn-primary full-width">
+                Ruaj porosinë në këtë pajisje
+            </button>
+
+        </div>
+
+    </aside>
+
+    <!-- INFORMATION MODAL -->
+    <!-- Modal-i fillon gjithmonë i fshehur -->
+    <div
+        id="info-modal"
+        class="modal hidden"
+        aria-hidden="true">
+
+        <div
+            class="modal-card"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="modal-title">
+
+            <div class="modal-header">
+
+                <h3 id="modal-title">Titulli</h3>
+
+                <button
+                    type="button"
+                    onclick="closeInfoModal()"
+                    class="close-btn"
+                    aria-label="Mbyll dritaren">
+
+                    &times;
+
+                </button>
+
+            </div>
+
+            <div id="modal-body" class="modal-body"></div>
+
+        </div>
+
+    </div>
+
+    <!-- TOAST MESSAGE -->
+    <div id="toast" class="toast">
+        Produkti u shtua në shportë!
+    </div>
+
+    <!-- JAVASCRIPT -->
+    <script src="js/main.js"></script>
+
+</body>
+</html>

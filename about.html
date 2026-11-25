@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/about.css">
+</head>
+<body>
+
+
+    <header>
+        <img src="logooo.png" alt="Classic Looks Logo" class="logo">
+
+        <a href="index.html">Home</a>
+        <a href="about.html" aria-current="page">About</a>
+        <a href="contact.html">Contact</a>
+        <button id="cart-btn" type="button" aria-controls="cart-drawer" aria-expanded="false">
+            <img src="images/shporta.jpg" alt="">
+            <span>Shporta</span>
+            <span id="cart-badge">0</span>
+        </button>
+    </header>
+
+    <section id="Main-Page">
+
+        <div class="about-container">
+
+            <h1>About Classic Looks</h1>
+
+            <p class="about-description">Classic Looks is a premier destination for fashion enthusiasts seeking timeless elegance and contemporary style. Our curated collections feature high-quality clothing, accessories, and footwear that cater to diverse tastes and preferences.</p>
+
+            <div class="about-container">
+
+                <h1>About Classic Looks</h1>
+
+                <div class="about-box">
+
+                    <h2>Who we are</h2>
+
+                    <p> Welcome to Classic Looks, where fashion meets sophistication. Our brand is dedicated to providing our customers with a seamless shopping experience, offering a wide range of products that reflect the latest trends while maintaining a classic appeal.</p>
+
+                    <h2>Our Mission</h2>
+                    <p>At Classic Looks, our mission is to empower individuals to express their unique style through fashion. We believe that clothing is not just about appearance; it's a form of self-expression that reflects personality and confidence.</p>
+
+                    <h2>Our Style</h2>
+                    <p>Our design philosophy centers around the idea of timeless elegance, blending classic elements with modern aesthetics to create pieces that transcend seasonal trends.</p>
+
+                    <h2>Why Classic Looks?</h2>
+
+                    <p>Classic Looks stands out for its commitment to quality, style, and customer satisfaction. We source our products from trusted suppliers and work with talented designers to bring you the best of both worlds: timeless classics and contemporary trends.</p>
+
+                </div>
+
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+
+
+    <!-- CART BACKDROP -->
+    <div id="cart-backdrop" class="backdrop hidden"></div>
+
+    <!-- SHOPPING CART -->
+    <aside id="cart-drawer" class="cart-drawer" inert>
+
+        <div class="cart-header">
+            <h3>Shporta Juaj</h3>
+
+            <button id="close-cart" class="close-btn" aria-label="Mbyll shportën">
+                &times;
+            </button>
+        </div>
+
+        <div id="cart-items" class="cart-items"></div>
+
+        <div class="cart-footer">
+
+            <div class="cart-total-row">
+                <span>Totali:</span>
+                <span id="cart-total" class="cart-total-price">
+                    0.00 €
+                </span>
+            </div>
+
+            <button id="checkout-btn" class="btn-primary full-width">
+                Ruaj porosinë në këtë pajisje
+            </button>
+
+        </div>
+
+    </aside>
+
+    <div id="toast" class="toast">
+        Produkti u shtua në shportë!
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -4,7 +4,7 @@ const products = [
         id: 1,
         name: "Pallto Leshi Klasike",
         category: "pallto",
-        price: 125.00,
+        price: 65.00,
         desc: "Pallto e gjatë me prerje të drejtë dhe jakë klasike, 80% lesh natyral.",
         image: "images/pallto.jpg",
         sizes: ["S", "M", "L"]
@@ -13,7 +13,7 @@ const products = [
         id: 2,
         name: "Këmishë Lino e Bardhë",
         category: "kemisha",
-        price: 48.00,
+        price: 40.00,
         desc: "Këmishë e lehtë 100% lino organike, ideale për stil të përditshëm dhe zyrtar.",
         image: "images/kemishe.jpg",
         sizes: ["XS", "S", "M", "L"]
@@ -22,7 +22,7 @@ const products = [
         id: 3,
         name: "Triko Kashmiri Krem",
         category: "triko",
-        price: 75.00,
+        price: 50.00,
         desc: "Triko e butë me jakë të rrumbullakët në nuancë bezhë të ngrohtë.",
         image: "images/triko-krem.jpg",
         sizes: ["S", "M", "L", "XL"]
@@ -31,7 +31,7 @@ const products = [
         id: 4,
         name: "Fustan Midi Minimalist",
         category: "kemisha",
-        price: 89.00,
+        price: 60.00,
         desc: "Fustan elegant me rrip në bel dhe rënie të lirshme në ngjyrë neutrale.",
         image: "images/fustan.jpg",
         sizes: ["XS", "S", "M"]
@@ -40,7 +40,7 @@ const products = [
         id: 5,
         name: "Xhaketë Blazer Strukturore",
         category: "pallto",
-        price: 98.00,
+        price: 65.00,
         desc: "Blazer klasik me dy kopsa dhe xhepa anësorë për një pamje të kuruar.",
         image: "images/blazer.jpg",
         sizes: ["S", "M", "L"]
@@ -49,7 +49,7 @@ const products = [
         id: 6,
         name: "Triko me Jakë Golf",
         category: "triko",
-        price: 62.00,
+        price: 55.00,
         desc: "Triko e thurur imët me jakë të lartë për ditët e ftohta.",
         image: "images/triko-golf.jpg",
         sizes: ["S", "M", "L"]
